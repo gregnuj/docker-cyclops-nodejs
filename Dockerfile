@@ -7,6 +7,7 @@ RUN set -ex \
     && apk add --no-cache \
     nodejs 
   
+USER cyclops
 WORKDIR /home/cyclops
 ENTRYPOINT ["/usr/bin/nodejs"]
 CMD ["--version"]
