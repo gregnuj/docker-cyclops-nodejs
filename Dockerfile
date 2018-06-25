@@ -7,7 +7,6 @@ RUN set -ex \
     && apk add --no-cache \
     nodejs 
   
-USER www-data
-WORKDIR /var/www
-ENTRYPOINT ["/usr/bin/php"]
-CMD ["-a"]
+WORKDIR /home/cyclops
+ENTRYPOINT ["/usr/bin/nodejs"]
+CMD ["--version"]
