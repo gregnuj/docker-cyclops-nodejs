@@ -9,7 +9,8 @@ RUN set -ex \
     nodejs \
     --no-install-recommends \
     && rm -r /var/lib/apt/lists/*
-    
+
+USER cyclops
 WORKDIR /home/cyclops
 ENTRYPOINT ["/usr/bin/nodejs"]
 CMD ["--version"]
