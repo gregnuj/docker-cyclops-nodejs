@@ -12,5 +12,4 @@ RUN set -ex \
 
 USER cyclops
 WORKDIR /home/cyclops
-ENTRYPOINT ["/usr/bin/nodejs"]
-CMD ["--version"]
+CMD ["/usr/bin/nodejs","--version"]
