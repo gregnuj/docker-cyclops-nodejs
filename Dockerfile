@@ -5,8 +5,6 @@ USER root
 # Install packages 
 RUN set -ex \
     && apk add --no-cache \
-RUN set -ex \
-    && apk add --no-cache \
     automake \
     autoconf \
     g++ \
