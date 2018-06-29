@@ -5,7 +5,14 @@ USER root
 # Install packages 
 RUN set -ex \
     && apk add --no-cache \
-    nodejs 
+    automake \
+    autoconf \
+    g++ \
+    gcc \
+    libpng \
+    make \
+    nasm \
+    nodejs
   
 USER cyclops
 WORKDIR /home/cyclops
