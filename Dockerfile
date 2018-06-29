@@ -6,6 +6,13 @@ USER root
 RUN set -ex \
     && apt-get update \
     && apt-get install -y \
+    automake \
+    autoconf \
+    g++ \
+    gcc \
+    libpng \
+    make \
+    nasm \
     nodejs \
     --no-install-recommends \
     && rm -r /var/lib/apt/lists/*
