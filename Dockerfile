@@ -12,7 +12,8 @@ RUN set -ex \
     libpng \
     make \
     nasm \
-    nodejs
+    nodejs \
+    yarn
   
 USER cyclops
 WORKDIR /home/cyclops
