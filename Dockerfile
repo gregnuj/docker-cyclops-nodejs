@@ -13,7 +13,7 @@ RUN set -ex \
     autoconf \
     g++ \
     gcc \
-    #libpng \
+    gnupg \
     make \
     nasm \
     nodejs \
