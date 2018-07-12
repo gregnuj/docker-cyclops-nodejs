@@ -4,9 +4,8 @@ USER root
 
 # Install packages 
 RUN set -ex \
-    && curl -sS https://raw.githubusercontent.com/yarnpkg/releases/gh-pages/debian/pubkey.gpg > /etc/apt/trusted.gpg.d/yarnpkg.gpg \
+    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list \ 
-    && apt-key update \
     && apt-get update \
     && apt-get install -y \
     automake \
