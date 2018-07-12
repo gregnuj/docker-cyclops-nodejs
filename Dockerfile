@@ -13,7 +13,6 @@ RUN set -ex \
     autoconf \
     g++ \
     gcc \
-    gnupg \
     make \
     nasm \
     nodejs \
